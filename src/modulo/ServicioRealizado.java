@@ -18,6 +18,7 @@ public class ServicioRealizado {
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "idEstado")
     private int idEstado;
     private String descripcion;
+    private String puntaje;
     
     @ManyToMany
     private List<Productor> productores = new ArrayList<>();

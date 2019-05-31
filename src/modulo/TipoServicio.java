@@ -22,6 +22,9 @@ public class TipoServicio {
     @ManyToOne
     private List<Servicio> servicios;
     
+    @ManyToOne
+    private List<ServicioOfrecido> serviciosOfrecidos = new ArrayList<>();
+    
     public TipoServicio (){
         this.servicios = new ArrayList<>();
     

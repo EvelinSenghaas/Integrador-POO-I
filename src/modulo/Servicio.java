@@ -34,8 +34,7 @@ public class Servicio {
     @ManyToOne
     private List<ServicioRealizado> servicioRealizado = new ArrayList<>();
     
-    @OneToMany(mappedBy = "servicio")
-    private Prestador prestador;
+    
     
     @ManyToMany
     private List<Productor> productores = new ArrayList<>(); 
@@ -43,57 +42,6 @@ public class Servicio {
     
     public Servicio(){
     }
-    
-    public Servicio(int idServicio, String descripcion, double costo, Date fecha, String estado) {
-        this.idServicio = idServicio;
-        this.descripcion = descripcion;
-        this.costo = costo;
-        this.fecha = fecha;
-        this.unidad = unidad;
-    }
-
-    public int getIdServicio() {
-        return idServicio;
-    }
-
-    public Unidad getUnidad() {
-        return unidad;
-    }
-
-    public void setUnidad(Unidad unidad) {
-        this.unidad = unidad;
-    }
-    
-
-    public void setIdServicio(int idServicio) {
-        this.idServicio = idServicio;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    public double getCosto() {
-        return costo;
-    }
-
-    public void setCosto(double costo) {
-        this.costo = costo;
-    }
-
-    public Date getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
-    }
-
- 
     
     
     
