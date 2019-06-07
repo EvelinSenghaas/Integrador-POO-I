@@ -1,8 +1,9 @@
 
 package modulo;
 
-
 public class Persona {
+    
+     //esto es una prueba
     private long cuit;
     private String razonSocial;
     private int nroInscripcion;
