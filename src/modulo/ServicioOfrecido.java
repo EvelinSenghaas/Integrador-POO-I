@@ -19,7 +19,7 @@ public class ServicioOfrecido {
     private int idServicioOfrecido;
     private double costoPorPrestador;
     
-    @ManyToMany
+    @ManyToManys
     private List<Prestador> prestadores = new ArrayList<>();
     
     @OneToMany(mappedBy = "serviciosOfrecidos")
