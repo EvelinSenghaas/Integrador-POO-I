@@ -8,7 +8,10 @@ package modulo;
 import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 /**
  *
@@ -16,13 +19,15 @@ import javax.persistence.ManyToOne;
  */
 @Entity
 public class TipoServicio {
+    @Id
+    @GeneratedValue
     private int idServi;
     private String descripcion;
     
-    @ManyToOne
+    @OneToMany (mappedBy = "tipoServicio")
     private List<Servicio> servicios;
     
-    @ManyToOne
+    @OneToMany(mappedBy = "tipoServicio")
     private List<ServicioOfrecido> serviciosOfrecidos = new ArrayList<>();
     
     public TipoServicio (){

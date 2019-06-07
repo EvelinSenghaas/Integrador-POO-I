@@ -7,17 +7,17 @@ import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 @Entity
 @DiscriminatorValue("Productor")
-
 public class Productor extends Persona {
     private int cantHectarea;
     
     @ManyToMany
     private List<Servicio> servicios = new ArrayList<>();
     
-    @ManyToOne
+    @OneToMany(mappedBy = "productor")
     private List<ServicioCancelado> serviciosCancelados = new ArrayList<>();
     
     @ManyToMany

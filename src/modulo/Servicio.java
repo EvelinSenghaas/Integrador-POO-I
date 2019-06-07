@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Temporal;
 
@@ -21,18 +22,21 @@ public class Servicio {
     @SequenceGenerator (name = "id_Servicio", initialValue = 1, allocationSize=1)
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "id_Servicio")
     private int idServicio;
+    
     private String descripcion;
+    
     private double costo;
     @Temporal(javax.persistence.TemporalType.DATE)
     private Date fecha;
     
-    @OneToMany(mappedBy = "servicioQuePertenece")
+    @ManyToOne
     private Unidad unidad;
     
-    @OneToMany(mappedBy = "servicios")
-    private TipoServicio tipoServio;
     @ManyToOne
-    private List<ServicioRealizado> servicioRealizado = new ArrayList<>();
+    private TipoServicio tipoServicio;
+    
+    @OneToOne
+    private ServicioRealizado serviRealizado;
     
     
     

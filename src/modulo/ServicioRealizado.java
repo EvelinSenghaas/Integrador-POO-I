@@ -9,6 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 
 @Entity
@@ -23,7 +24,7 @@ public class ServicioRealizado {
     @ManyToMany
     private List<Productor> productores = new ArrayList<>();
     
-    @OneToMany(mappedBy = "servicioRealizado")
+    @OneToOne(mappedBy = "serviRealizado")
     private Servicio servicio;
    
     public ServicioRealizado(){

@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 
@@ -22,8 +23,8 @@ public class ServicioOfrecido {
     @ManyToMany
     private List<Prestador> prestadores = new ArrayList<>();
     
-    @OneToMany(mappedBy = "serviciosOfrecidos")
-    private TipoServicio tiposervicio;
+    @ManyToOne
+    private TipoServicio tipoServicio;
     
         
 }

@@ -7,6 +7,7 @@ import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 @Entity
 @DiscriminatorValue(" Prestador ")
@@ -16,7 +17,8 @@ class Prestador extends Persona{
     private List<ZonaServicio> zona = new ArrayList<>(); 
     
     
-    @ManyToOne 
+    
+    @OneToMany(mappedBy = "prestador")
     private List<ServicioCancelado> servicioCancelado = new ArrayList<>(); 
     
     @ManyToMany(mappedBy = "")
