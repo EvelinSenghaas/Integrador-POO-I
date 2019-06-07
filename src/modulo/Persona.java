@@ -1,11 +1,5 @@
 
 package modulo;
-
-<<<<<<< HEAD
-public class Persona {
-    
-     //esto es una prueba
-=======
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,9 +12,9 @@ import javax.persistence.InheritanceType;
 @Inheritance(strategy = InheritanceType.JOINED)
 @DiscriminatorColumn(name = "tipo de Persona")
 public class Persona {
+
     @Id
     @GeneratedValue
->>>>>>> 657f6558a8a98e935ba5f803e899ad7100829678
     private long cuit;
     
     private String razonSocial;
