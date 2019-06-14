@@ -20,8 +20,8 @@ public class ServicioOfrecido {
     private int idServicioOfrecido;
     private double costoPorPrestador;
     
-    @ManyToMany
-    private List<Prestador> prestadores = new ArrayList<>();
+    @ManyToOne
+    private Prestador prestador;
     
     @ManyToOne
     private TipoServicio tipoServicio;

@@ -41,8 +41,8 @@ public class Servicio {
     
     
     
-    @ManyToMany
-    private List<Productor> productores = new ArrayList<>(); 
+    @ManyToOne
+    private Productor productor; 
     
     
     public Servicio(){

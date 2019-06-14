@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
@@ -21,8 +22,8 @@ public class ServicioRealizado {
     private String descripcion;
     private String puntaje;
     
-    @ManyToMany
-    private List<Productor> productores = new ArrayList<>();
+    @ManyToOne
+    private Productor productor;
     
     @OneToOne(mappedBy = "serviRealizado")
     private Servicio servicio;

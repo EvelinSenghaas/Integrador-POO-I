@@ -14,13 +14,13 @@ import javax.persistence.OneToMany;
 public class Productor extends Persona {
     private int cantHectarea;
     
-    @ManyToMany
+    @OneToMany (mappedBy = "productor")
     private List<Servicio> servicios = new ArrayList<>();
     
     @OneToMany(mappedBy = "productor")
     private List<ServicioCancelado> serviciosCancelados = new ArrayList<>();
     
-    @ManyToMany
+    @OneToMany
     private List<ServicioRealizado> serviciosRealizados = new ArrayList<>();
     
 

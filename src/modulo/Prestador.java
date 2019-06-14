@@ -21,7 +21,7 @@ class Prestador extends Persona{
     @OneToMany(mappedBy = "prestador")
     private List<ServicioCancelado> servicioCancelado = new ArrayList<>(); 
     
-    @ManyToMany(mappedBy = "")
+    @OneToMany(mappedBy = "prestador")
     private List<ServicioOfrecido> serviviosOfrecidos = new ArrayList<>();
     
     
