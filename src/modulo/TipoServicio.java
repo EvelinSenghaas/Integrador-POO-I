@@ -35,12 +35,6 @@ public class TipoServicio {
     
     }
 
-    public TipoServicio(int idServi, String descripcion) {
-        this.servicios = new ArrayList<>();
-        this.idServi = idServi;
-        this.descripcion = descripcion;
-    }
-
     public int getIdServi() {
         return idServi;
     }
@@ -64,6 +58,15 @@ public class TipoServicio {
     public void setServicios(List<Servicio> servicios) {
         this.servicios = servicios;
     }
+
+    public List<ServicioOfrecido> getServiciosOfrecidos() {
+        return serviciosOfrecidos;
+    }
+
+    public void setServiciosOfrecidos(List<ServicioOfrecido> serviciosOfrecidos) {
+        this.serviciosOfrecidos = serviciosOfrecidos;
+    }
+
     
         
     

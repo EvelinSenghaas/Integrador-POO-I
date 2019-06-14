@@ -25,6 +25,44 @@ public class ServicioOfrecido {
     
     @ManyToOne
     private TipoServicio tipoServicio;
+
+    public ServicioOfrecido() {
+    }
+
+    
+    public int getIdServicioOfrecido() {
+        return idServicioOfrecido;
+    }
+
+    public void setIdServicioOfrecido(int idServicioOfrecido) {
+        this.idServicioOfrecido = idServicioOfrecido;
+    }
+
+    public double getCostoPorPrestador() {
+        return costoPorPrestador;
+    }
+
+    public void setCostoPorPrestador(double costoPorPrestador) {
+        this.costoPorPrestador = costoPorPrestador;
+    }
+
+    public Prestador getPrestador() {
+        return prestador;
+    }
+
+    public void setPrestador(Prestador prestador) {
+        this.prestador = prestador;
+    }
+
+    public TipoServicio getTipoServicio() {
+        return tipoServicio;
+    }
+
+    public void setTipoServicio(TipoServicio tipoServicio) {
+        this.tipoServicio = tipoServicio;
+    }
+    
+    
     
         
 }

@@ -17,5 +17,35 @@ public class ZonaServicio {
     
     @ManyToMany
     private List<Prestador> prestadores = new ArrayList<>();
+
+    public ZonaServicio() {
+    }
+
+    
+    public int getIdZona() {
+        return idZona;
+    }
+
+    public void setIdZona(int idZona) {
+        this.idZona = idZona;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public List<Prestador> getPrestadores() {
+        return prestadores;
+    }
+
+    public void setPrestadores(List<Prestador> prestadores) {
+        this.prestadores = prestadores;
+    }
+    
+    
 }
         
