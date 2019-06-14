@@ -10,7 +10,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 @Entity
-@DiscriminatorValue(" Prestador ")
+@DiscriminatorValue("Prestador")
 class Prestador extends Persona{
     
     @ManyToMany
