@@ -20,7 +20,7 @@ public class Productor extends Persona {
     @OneToMany(mappedBy = "productor")
     private List<ServicioCancelado> serviciosCancelados = new ArrayList<>();
     
-    @OneToMany
+    @OneToMany (mappedBy = "productor")
     private List<ServicioRealizado> serviciosRealizados = new ArrayList<>();
     
 
