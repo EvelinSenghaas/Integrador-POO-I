@@ -23,6 +23,34 @@ class Prestador extends Persona{
     
     @OneToMany(mappedBy = "prestador")
     private List<ServicioOfrecido> serviviosOfrecidos = new ArrayList<>();
+
+    public Prestador() {
+    }
+
+    public List<ZonaServicio> getZona() {
+        return zona;
+    }
+
+    public void setZona(List<ZonaServicio> zona) {
+        this.zona = zona;
+    }
+
+    public List<ServicioCancelado> getServicioCancelado() {
+        return servicioCancelado;
+    }
+
+    public void setServicioCancelado(List<ServicioCancelado> servicioCancelado) {
+        this.servicioCancelado = servicioCancelado;
+    }
+
+    public List<ServicioOfrecido> getServiviosOfrecidos() {
+        return serviviosOfrecidos;
+    }
+
+    public void setServiviosOfrecidos(List<ServicioOfrecido> serviviosOfrecidos) {
+        this.serviviosOfrecidos = serviviosOfrecidos;
+    }
+    
     
     
 }

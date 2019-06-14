@@ -22,6 +22,41 @@ public class Productor extends Persona {
     
     @OneToMany (mappedBy = "productor")
     private List<ServicioRealizado> serviciosRealizados = new ArrayList<>();
+
+    public Productor() {
+    }
+
+    public int getCantHectarea() {
+        return cantHectarea;
+    }
+
+    public void setCantHectarea(int cantHectarea) {
+        this.cantHectarea = cantHectarea;
+    }
+
+    public List<Servicio> getServicios() {
+        return servicios;
+    }
+
+    public void setServicios(List<Servicio> servicios) {
+        this.servicios = servicios;
+    }
+
+    public List<ServicioCancelado> getServiciosCancelados() {
+        return serviciosCancelados;
+    }
+
+    public void setServiciosCancelados(List<ServicioCancelado> serviciosCancelados) {
+        this.serviciosCancelados = serviciosCancelados;
+    }
+
+    public List<ServicioRealizado> getServiciosRealizados() {
+        return serviciosRealizados;
+    }
+
+    public void setServiciosRealizados(List<ServicioRealizado> serviciosRealizados) {
+        this.serviciosRealizados = serviciosRealizados;
+    }
     
 
     

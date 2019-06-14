@@ -11,7 +11,7 @@ import javax.persistence.InheritanceType;
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 @DiscriminatorColumn(name = "tipo de Persona")
-public class Persona {
+public abstract class Persona {
 
     @Id
     @GeneratedValue
@@ -23,13 +23,6 @@ public class Persona {
     
     public Persona(){
  
-    }
-
-    public Persona(long cuit, String razonSocial, int nroInscripcion, String domicilioLegal) {
-        this.cuit = cuit;
-        this.razonSocial = razonSocial;
-        this.nroInscripcion = nroInscripcion;
-        this.domicilioLegal = domicilioLegal;
     }
 
     public long getCuit() {
@@ -64,7 +57,4 @@ public class Persona {
         this.domicilioLegal = domicilioLegal;
     }
     
-    
-    
-            
 }
