@@ -12,7 +12,7 @@ import javax.persistence.OneToMany;
 
 @Entity
 @DiscriminatorValue("Prestador")
-class Prestador extends Persona implements Serializable{
+class Prestador extends Persona{
     
     @ManyToMany
     private List<ZonaServicio> zona = new ArrayList<>(); 

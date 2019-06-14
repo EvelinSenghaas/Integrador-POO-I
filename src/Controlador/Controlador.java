@@ -5,10 +5,15 @@
  */
 package Controlador;
 
-/**
- *
- * @author Facu
- */
+import controlador.Persistencia;
+
 public class Controlador {
+    private final Persistencia Persistencia;
+       
+    public Controlador(Persistencia p){
+        this.Persistencia = p;
+    }
+    
+    
     
 }

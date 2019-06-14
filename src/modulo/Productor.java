@@ -12,8 +12,7 @@ import javax.persistence.OneToMany;
 
 @Entity
 @DiscriminatorValue("Productor")
-public class Productor extends Persona implements Serializable {
-    
+public class Productor extends Persona{
     
     private int cantHectarea;
     
