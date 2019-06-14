@@ -16,6 +16,7 @@ public class Servicios extends javax.swing.JFrame {
 
     public Servicios(JFrame vistaAnterior) {
         this.vistaAnterior = vistaAnterior;
+        this.setVisible(true);
     }
     
     
