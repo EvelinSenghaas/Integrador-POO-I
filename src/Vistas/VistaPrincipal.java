@@ -5,17 +5,15 @@
  */
 package Vistas;
 
-/**
- *
- * @author Facu
- */
+import Controlador.Controlador;
+
+
 public class VistaPrincipal extends javax.swing.JFrame {
 
-    /**
-     * Creates new form VistaPrincipal
-     */
-    public VistaPrincipal() {
+    public Controlador controlado; 
+    public VistaPrincipal(Controlador c) {
         initComponents(); 
+        this.controlado = c;
         this.setVisible(true);
     }
 
