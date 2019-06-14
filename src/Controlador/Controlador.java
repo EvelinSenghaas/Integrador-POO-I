@@ -10,5 +10,12 @@ package Controlador;
  * @author Facu
  */
 public class Controlador {
+    private Persistencia persistencia;
+    
+    
+    public Controlador(Persistencia p){
+        this.persistencia = p;
+    }
+    
     
 }
