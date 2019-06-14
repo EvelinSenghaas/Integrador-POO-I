@@ -13,11 +13,18 @@
     <class>modulo.Unidad</class>
     <class>modulo.ZonaServicio</class>
     <properties>
+<<<<<<< HEAD
       <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5433/Integrador"/>
       <property name="javax.persistence.jdbc.user" value="postgres"/>
       <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
       <property name="javax.persistence.jdbc.password" value="41.788.499"/>
       <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+=======
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5434/integrador"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="1234"/>
+>>>>>>> 4b676089d3ccb93b2b211213a1185b3b5b282018
     </properties>
   </persistence-unit>
 </persistence>
