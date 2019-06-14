@@ -9,12 +9,12 @@ package Vistas;
  *
  * @author Facu
  */
-public class VistaPedidos extends javax.swing.JFrame {
+public class VistaServicios extends javax.swing.JFrame {
 
     /**
      * Creates new form VistaPedidos
      */
-    public VistaPedidos() {
+    public VistaServicios() {
         initComponents();
     }
 
