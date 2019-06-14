@@ -18,6 +18,7 @@ import javax.persistence.Temporal;
 
 @Entity
 public class Servicio {
+    //comentario de prueba
     @Id
     @SequenceGenerator (name = "id_Servicio", initialValue = 1, allocationSize=1)
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "id_Servicio")
