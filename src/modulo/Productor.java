@@ -1,6 +1,7 @@
 
 package modulo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.DiscriminatorValue;
@@ -11,7 +12,9 @@ import javax.persistence.OneToMany;
 
 @Entity
 @DiscriminatorValue("Productor")
-public class Productor extends Persona {
+public class Productor extends Persona implements Serializable {
+    
+    
     private int cantHectarea;
     
     @OneToMany (mappedBy = "productor")

@@ -4,14 +4,17 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Hp1/Downloads/POO1/integrador/src/modulo/Unidad.java</file>
-            <file>file:/C:/Users/Hp1/Downloads/POO1/integrador/src/modulo/ServicioRealizado.java</file>
+            <file>file:/C:/Users/Hp1/Downloads/POO1/integrador/src/Vistas/VistaPedidos.java</file>
             <file>file:/C:/Users/Hp1/Downloads/POO1/integrador/src/modulo/Prestador.java</file>
-            <file>file:/C:/Users/Hp1/Downloads/POO1/integrador/src/modulo/TipoServicio.java</file>
-            <file>file:/C:/Users/Hp1/Downloads/POO1/integrador/src/sistema/Integrador.java</file>
             <file>file:/C:/Users/Hp1/Downloads/POO1/integrador/src/modulo/ServicioOfrecido.java</file>
             <file>file:/C:/Users/Hp1/Downloads/POO1/integrador/src/modulo/Productor.java</file>
             <file>file:/C:/Users/Hp1/Downloads/POO1/integrador/src/modulo/ServicioCancelado.java</file>
             <file>file:/C:/Users/Hp1/Downloads/POO1/integrador/src/modulo/Servicio.java</file>
+            <file>file:/C:/Users/Hp1/Downloads/POO1/integrador/src/modulo/Persona.java</file>
+            <file>file:/C:/Users/Hp1/Downloads/POO1/integrador/src/modulo/ServicioRealizado.java</file>
+            <file>file:/C:/Users/Hp1/Downloads/POO1/integrador/src/modulo/TipoServicio.java</file>
+            <file>file:/C:/Users/Hp1/Downloads/POO1/integrador/src/sistema/Integrador.java</file>
+            <file>file:/C:/Users/Hp1/Downloads/POO1/integrador/src/META-INF/persistence.xml</file>
             <file>file:/C:/Users/Hp1/Downloads/POO1/integrador/src/modulo/ZonaServicio.java</file>
         </group>
     </open-files>
