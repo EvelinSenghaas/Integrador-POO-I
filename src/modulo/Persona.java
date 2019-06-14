@@ -10,7 +10,7 @@ import javax.persistence.InheritanceType;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-@DiscriminatorColumn(name = "tipo de Persona")
+@DiscriminatorColumn(name = "tipoPersona")
 public abstract class Persona {
 
     @Id
