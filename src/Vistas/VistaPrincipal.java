@@ -10,10 +10,10 @@ import Controlador.Controlador;
 
 public class VistaPrincipal extends javax.swing.JFrame {
 
-    public Controlador controlado; 
+    public Controlador controlador; 
     public VistaPrincipal(Controlador c) {
         initComponents(); 
-        this.controlado = c;
+        this.controlador = c;
         this.setVisible(true);
     }
 
