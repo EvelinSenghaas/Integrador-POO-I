@@ -105,12 +105,14 @@ public class VistaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        // boton servicios, abre nueva ventana para gestionar servicios
         VistaServicios ventanita = new VistaServicios(this.controlado, this);
-        this.setVisible(false);
-        ventanita.setLocationRelativeTo(null);
-        ventanita.setResizable(false);
-        ventanita.setVisible(true);
+        this.dispose();
+        
+        //this.setVisible(false);
+        //ventanita.setLocationRelativeTo(null);
+       // ventanita.setResizable(false);
+        //ventanita.setVisible(true);
         
     }//GEN-LAST:event_jButton1ActionPerformed
 

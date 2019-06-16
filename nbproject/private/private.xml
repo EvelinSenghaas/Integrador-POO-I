@@ -4,13 +4,15 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Facu/Documents/NetBeansProjects/integrador/src/modulo/Persona.java</file>
+            <file>file:/C:/Users/Facu/Documents/NetBeansProjects/integrador/src/META-INF/persistence.xml</file>
             <file>file:/C:/Users/Facu/Documents/NetBeansProjects/integrador/src/modulo/ServicioRealizado.java</file>
             <file>file:/C:/Users/Facu/Documents/NetBeansProjects/integrador/src/modulo/ServicioCancelado.java</file>
-            <file>file:/C:/Users/Facu/Documents/NetBeansProjects/integrador/src/Vistas/VistaPedidos.java</file>
             <file>file:/C:/Users/Facu/Documents/NetBeansProjects/integrador/src/modulo/Unidad.java</file>
+            <file>file:/C:/Users/Facu/Documents/NetBeansProjects/integrador/src/Vistas/VistaPrincipal.java</file>
             <file>file:/C:/Users/Facu/Documents/NetBeansProjects/integrador/src/sistema/Integrador.java</file>
             <file>file:/C:/Users/Facu/Documents/NetBeansProjects/integrador/src/modulo/ServicioOfrecido.java</file>
             <file>file:/C:/Users/Facu/Documents/NetBeansProjects/integrador/src/modulo/Productor.java</file>
+            <file>file:/C:/Users/Facu/Documents/NetBeansProjects/integrador/src/Vistas/VistaServicios.java</file>
             <file>file:/C:/Users/Facu/Documents/NetBeansProjects/integrador/src/Controlador/Controlador.java</file>
             <file>file:/C:/Users/Facu/Documents/NetBeansProjects/integrador/src/modulo/TipoServicio.java</file>
             <file>file:/C:/Users/Facu/Documents/NetBeansProjects/integrador/src/Controlador/Persistencia.java</file>
