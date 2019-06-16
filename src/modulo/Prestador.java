@@ -1,6 +1,7 @@
 
 package modulo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.DiscriminatorValue;
@@ -15,8 +16,6 @@ class Prestador extends Persona{
     
     @ManyToMany
     private List<ZonaServicio> zona = new ArrayList<>(); 
-    
-    
     
     @OneToMany(mappedBy = "prestador")
     private List<ServicioCancelado> servicioCancelado = new ArrayList<>(); 

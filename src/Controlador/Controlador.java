@@ -6,16 +6,19 @@
 package Controlador;
 
 import controlador.Persistencia;
+import java.util.List;
+import modulo.Productor;
 
 public class Controlador {
     private final Persistencia Persistencia;
-    
-    
-    
+       
     public Controlador(Persistencia p){
         this.Persistencia = p;
     }
     
-    
-    
+     public List listarProductores(){
+        //
+        return Persistencia.buscarTodos(Productor.class) ;
+    }
+   
 }
