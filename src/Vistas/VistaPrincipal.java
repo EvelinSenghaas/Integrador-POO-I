@@ -10,11 +10,14 @@ import Controlador.Controlador;
 
 public class VistaPrincipal extends javax.swing.JFrame {
 
-    private final Controlador controlado;
+ 
+    public Controlador controlador; 
+    
+    //private final Controlador controlador;
    
     public VistaPrincipal(Controlador c) {
         initComponents(); 
-        this.controlado = c;
+        this.controlador = c;
         this.setVisible(true);
     }
 
@@ -107,7 +110,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
         // boton servicios, abre nueva ventana para gestionar servicios
-        VistaServicios ventanita = new VistaServicios(this.controlado, this);
+        VistaServicios ventanita = new VistaServicios(this.controlador, this);
         this.dispose();
         
         //this.setVisible(false);
@@ -126,7 +129,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // para ir a ventana de productores
-        VistaProductores productor = new VistaProductores(this.controlado, this);
+        VistaProductores productor = new VistaProductores(this.controlador, this);
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 

@@ -15,6 +15,7 @@ public class Servicios extends javax.swing.JFrame {
     private Controlador controlador;
 
     public Servicios(JFrame vistaAnterior) {
+        initComponents();
         this.vistaAnterior = vistaAnterior;
         this.setVisible(true);
     }
