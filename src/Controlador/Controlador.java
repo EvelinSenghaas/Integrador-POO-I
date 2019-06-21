@@ -7,7 +7,7 @@ package Controlador;
 
 import controlador.Persistencia;
 import java.util.List;
-import modulo.Productor;
+import modulo.*;
 
 public class Controlador {
     private final Persistencia Persistencia;

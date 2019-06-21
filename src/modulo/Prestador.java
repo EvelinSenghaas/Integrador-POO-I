@@ -14,7 +14,8 @@ import javax.persistence.OneToMany;
 @DiscriminatorValue("Prestador")
 class Prestador extends Persona{
     
-    @ManyToMany
+    
+    //
     private List<ZonaServicio> zona = new ArrayList<>(); 
     
     @OneToMany(mappedBy = "prestador")

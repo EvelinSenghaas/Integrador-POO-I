@@ -59,6 +59,11 @@ public class Productor extends Persona{
     public void setServiciosRealizados(List<ServicioRealizado> serviciosRealizados) {
         this.serviciosRealizados = serviciosRealizados;
     }
+    @Override
+    public String toString(){
+        return super.getCuit()+" "+super.getDomicilioLegal()+" "+super.getNroInscripcion()+" "+super.getRazonSocial();
+    
+    }
     
 
     
