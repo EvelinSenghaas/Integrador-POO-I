@@ -6,6 +6,7 @@
 package Vistas;
 
 import Controlador.Controlador;
+import Vistas.VistaProductores;
 
 
 public class VistaPrincipal extends javax.swing.JFrame {

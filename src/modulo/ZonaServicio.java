@@ -16,7 +16,7 @@ public class ZonaServicio {
     private int idZona;
     private String descripcion;
     
-    @ManyToMany
+    @ManyToMany(mappedBy="zonas")
     private List<Prestador> prestadores = new ArrayList<>();
 
     public ZonaServicio() {

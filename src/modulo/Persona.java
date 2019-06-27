@@ -1,5 +1,6 @@
 
 package modulo;
+import java.io.Serializable;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,7 +12,7 @@ import javax.persistence.InheritanceType;
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 @DiscriminatorColumn(name = "tipoPersona")
-public abstract class Persona {
+public abstract class Persona implements Serializable {
 
     @Id
     @GeneratedValue
@@ -22,7 +23,13 @@ public abstract class Persona {
     private String domicilioLegal;
     
     public Persona(){
- 
+        
+    }
+
+    public Persona(String razonSocial, int nroInscripcion, String domicilioLegal) {
+        this.razonSocial = razonSocial;
+        this.nroInscripcion = nroInscripcion;
+        this.domicilioLegal = domicilioLegal;
     }
 
     public long getCuit() {

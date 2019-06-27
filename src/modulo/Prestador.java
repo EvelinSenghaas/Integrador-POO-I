@@ -16,7 +16,9 @@ class Prestador extends Persona{
     
     
     //
-    private List<ZonaServicio> zona = new ArrayList<>(); 
+    
+    @ManyToMany
+    private List<ZonaServicio> zonas = new ArrayList<>(); 
     
     @OneToMany(mappedBy = "prestador")
     private List<ServicioCancelado> servicioCancelado = new ArrayList<>(); 
@@ -25,14 +27,19 @@ class Prestador extends Persona{
     private List<ServicioOfrecido> serviviosOfrecidos = new ArrayList<>();
 
     public Prestador() {
+        
     }
+
+   
+    
+    
 
     public List<ZonaServicio> getZona() {
-        return zona;
+        return zonas;
     }
 
-    public void setZona(List<ZonaServicio> zona) {
-        this.zona = zona;
+    public void setZona(List<ZonaServicio> zonas) {
+        this.zonas = zonas;
     }
 
     public List<ServicioCancelado> getServicioCancelado() {
@@ -51,6 +58,10 @@ class Prestador extends Persona{
         this.serviviosOfrecidos = serviviosOfrecidos;
     }
     
+    @Override
+    public String toString(){
+        return super.getCuit()+" "+super.getDomicilioLegal()+" "+super.getNroInscripcion()+" "+super.getRazonSocial();
     
+    }
     
 }
